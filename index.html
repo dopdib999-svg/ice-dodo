@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ice Dodo - Play Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .game-container {
+      width: 400px;
+      height: 800px;
+      max-width: 95%;
+      max-height: 90vh;
+      background: black;
+      border-radius: 30px;
+      border: 5px solid #222;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    @media (max-width: 420px) {
+      .game-container {
+        width: 94%;
+        height: 84vh;
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <iframe src="https://icedodo.io/" title="Ice Dodo" allowfullscreen>
+      <p style="color:white; text-align:center; padding:20px;">
+        Your browser does not support iframes or access to the game is blocked.
+      </p>
+    </iframe>
+  </div>
+
+  <script>
+    window.onload = function() {
+      console.log("Ice Dodo embed initialized.");
+    };
+  </script>
+</body>
+</html>
